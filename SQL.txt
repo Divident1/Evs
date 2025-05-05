@@ -1,0 +1,59 @@
+select c.course_name,count(e.course_id) from courses c
+Left join enrollments e on e.course_id=c.course_id
+group by course_name
+
+
+
+Given string contains all unique character?
+
+
+Js
+function buggyHasUniqueCharacter(str){
+ const charSet =new Array(26).fill(false);
+
+	for(const c of str)
+		const index= c.charCode(0)-'z'.charCodeAt(0);
+			if(charSet[index]){
+
+				return false;
+}	
+charSet[index];
+}return true;
+}
+
+
+const str=get();
+const result =buggyHasUniqueCharacter(str);
+price(result ?"1":"0");
+
+
+2nd Program
+
+
+count the oddness in the number
+
+function countOddness(N,A){
+
+
+A.sort((a,b)=>a-b);
+
+let ans=0;
+
+for(let i=0;i<N;i++){
+if(A[i] %2 !==0 && A[i] !=A[i-1]){
+ans +=1;
+
+}}
+return ans;
+
+
+}
+ 
+Const N=parseInt(gets().trim());
+
+Let A=[];
+for(let j=0;j<N;j++)
+{
+A..push(parseInt(get().trim()));
+}
+const result =countOddness(N,A));
